@@ -20,5 +20,5 @@ Configs are stored in the docker container at `/var/lib/bitlbee` and `/etc/bitlb
 
 The defult port is `29493`
 
-[znc]: https://www.bitlbee.org/
+[bitlbee]: https://www.bitlbee.org/
 [docker]: http://docker.io/
