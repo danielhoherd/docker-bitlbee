@@ -4,7 +4,7 @@ build:
 
 .PHONY: run
 run:
-	docker run -d -h bitlbee -p 29493:6667 --name bitlbee -v ${HOME}/.bitlbee:/var/lib/bitlbee -v ${HOME}/.bitlbee/etc:/etc/bitlbee ${USER}/bitlbee
+	docker run --restart=always -d -h bitlbee -p 29493:6667 --name bitlbee -v ${HOME}/.bitlbee:/var/lib/bitlbee -v ${HOME}/.bitlbee/etc:/etc/bitlbee ${USER}/bitlbee
 
 .PHONY: debug
 debug:
